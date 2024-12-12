@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Literal Language Machine (LLM)</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>Literal Language Machine (LLM)</header>
+    <p id="welcome-message">
+      Large Language Models (LLMs) generate sentences by predicting the most
+      probable next token in a sequence based on patterns in data—they are not
+      minds but statistical systems processing language without understanding or
+      reasoning.
+    </p>
+    <main>
+      <!-- Left column for input -->
+      <div id="left-column">
+        <label for="concept">Ask me anything</label>
+        <textarea
+          id="concept"
+          type="text"
+          placeholder="Message GPT"
+        ></textarea>
+
+        <label for="temperature"
+        >normal
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          disturbed</label>
+
+        <input
+          id="temperature"
+          type="range"
+          min="0.2"
+          max="1.6"
+          value="0.0"
+          step="0.2"
+        />
+        <button id="search">Send</button>
+      </div>
+
+      <!-- Right column for output -->
+      <div id="right-column">
+        <div id="output"></div>
+      </div>
+    </main>
+    <script src="script.js">
+    </script>
+  </body>
+</html>
